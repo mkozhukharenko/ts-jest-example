@@ -1,0 +1,30 @@
+{
+  "scripts": {
+    "test": "jest --no-cache"
+  },
+  "jest": {
+    "scriptPreprocessor": "<rootDir>/node_modules/ts-jest/preprocessor.js",
+    "testRegex": "(/__tests__/.*|\\.(test|spec))\\.(ts|tsx|js)$",
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js"
+    ],
+    "globals": {
+      "__TS_CONFIG__": {
+        "module": "commonjs",
+        "jsx": "react"
+      }
+    }
+  },
+  "dependencies": {
+    "react": "^15.3.1"
+  },
+  "devDependencies": {
+    "jest": "^15.1.1",
+    "jest-cli": "^15.1.1",
+    "react-test-renderer": "^15.3.1",
+    "ts-jest": "^0.1.3",
+    "typescript": "^1.8.10"
+  }
+}
